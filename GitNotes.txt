@@ -1,0 +1,25 @@
+VCM- Version controlling System (GIT)
+SCM - Source code management (GITHUB)
+1. creating the repository in github and how to clone the 
+repositories from local repository to local machine 
+clone- create a copy of specific repository
+->git clone "Paste link of specific repository"
+->ls #used to show the files which are present in specific repository
+->git pull #used to get the files that are created in repository to local machine
+private- when any changes made in the repository , it can't be seen by anyone other than user
+public - here, it can be seen by anyone and also changes made by others are identified
+*The repository which is created in github is known as Remote Repository , in Git- local Repository
+2. move the files from git to github
+commands - git add , git commit, git push, git status
+3. create empty repo in github and init repo in git,  move the files into github repo
+commands:
+git init
+echo "#message" >> README.md
+git add . or git add --all or git add file1.txt file2.txt .....
+git commit -m "message"
+git remote add origin link of empty repository
+git push origin master
+4.branches
+->git branch #lists all branches created in repository
+->git branch new_branch #new_branch is created
+->git checkout branch_name #switches the other barnch
