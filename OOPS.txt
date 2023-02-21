@@ -1,0 +1,153 @@
+_______________oops_____________________
+what is oop?
+>OOP means object oriented programming that uses objects in programming.
+>They uses objects as a primary source to implement what is to happen in the code.
+>It is used to implement the real world entities like inheritance,encapsulation, abstraction, polymoriphism , etc.,
+>The main aim of oops is to bind together the data and the functions that operate on them 
+so that no other part of the code can access this data except that function.
+
+OOPS CONCEPTS
+1.Class
+>Class is a set of objects which shares common characteristics/behaviour & common attributes/properties
+>class is not a real time entity, it is a template or blueprint / prototype from which objects are created
+>It doesn't occupy space in memory
+>class is a group of variables of diff data types and group of methods.
+>classes are said to be a logical quantities.
+>It has both static and instance initializers.
+>class declaration consists of :
+.class name
+.modifier
+.superclass
+.body
+.interfaces
+Example of class:
+.Animal
+.bird
+.vehicle
+.company
+.student
+
+
+2.Object
+>It is a basic unit of object oriented progr and represents a real life entities.
+>user can create as many as objects that he /she wants to create.
+>an object consists of :
+.State - it is represented by attributes of an object. also represented as property of an object.
+.Behaviour -  it is represented by method of an obj. also refered as response of an object with other objects.
+.Identity - it gives an unique name to an obj and enables one obj to interact with other objs.
+Example:
+Dog is considered as object
+it has state as breed,color,age
+and behaviour as eat, sleep, bark
+identity is name of the dog
+>When an obj of a class is created, then class is said to be instantiated.
+>all the instances share the attributes and behaviour of the class.
+>The single class may have many number of instances.
+Example a dog class can have many num of instances/objects as dog1, dog2 , dog3
+>objects can have both physical and logical data.
+
+
+3.Abstraction
+>It is the process of identifying the only required characteristics of an object and ignoring the irrelevant details.
+>The properties and behaviour of an object is differentiate from other objects of similar type and also helps in 
+classifying / grouping of objects.
+>consider a real time-example of a man driving a car.
+The man knows only that pressing the accelerator will increase the speed of car, and applying breaks on them 
+will stops the car. He doesn't know how on pressing the accelerator will actually increase the speed of the car, 
+he doesn't know the inner mechanism of the car or implementation of accelerator, brakes, etc in the car. This is 
+what abstraction is.
+>In java, abstraction is achieved by interfaces and abstract classes. 100% abstraction can be achieved 
+using interfaces.
+--------Interfaces--------
+>An interface is an abstract type that is used to specify the behaviour of class.
+>An interface in java is a blueprint of a class.
+>A java interface can contains static constants and abstract methods.
+>An interface in java can have variables and methods , methods declare in interface are by
+default abstract (only method signature , no body).
+>An interface can specify a class must do and not how.
+>if a class implements an interface and doesn't provide method bodies for all the functions 
+specified in an interface, then the class must be declared abstract.
+>To declare an interface ,use the interface keyword . It is used to provide total abstraction.
+That means all the methods in an interface are declared with an empty body and are public , and fields are
+public, static and final.
+>A class that implements an interface must implements all the methods declared in an interface.
+To implement interface use implements keyword
+Why do we use an interfaces?
+>used to achive total abstraction
+>used to achieve loose coupling
+>since java doesn't support mutliple inheritence ,using an interfaces can achieve multiple inheritace.
+>why we use interfaces instead of abstract classes?
+Because abstract classes may contain non-final variables, whereas variables in interfaces are public,
+static and final.
+-------abstract class-------
+>It may have both abstract and non-abstract methods. An abstract is a java modifier applicable for 
+classes and methods but not for variables.
+1.An instance of an abstract is can't be created.
+2.Constructors are allowed
+3.we can have abstract class without any abstract method.
+4.There can be a final method in abstarct class, but an abstract method can't be declared as final.
+5.We can have static methods in an abstract class.
+6.we can use abstract keyword for top-level classes as well as inner classes.
+7.If a class contains atleast one abstarct method then class is declare as abstract.
+8.If a child class is unable to implement all the methods of the parent class then we should declare 
+that child class as abstract so that next level child class provides implementation to the remaining 
+methods.
+Ex for implementation : man driving a car
+
+
+4.Encapsulation
+>It is defined as wrapping of data under a single unit.
+>It is a mechanism that binds together code and the data it manipulates.
+>It is a protective shield that prevents the data from being accesses by the code outside the shield.
+>The variable or data of a class is hidden from any other class and can be accessed only through member function 
+of its own class in which it is declared.
+>As in encapsulation, the data in a class is hidden from other classes using the data hiding concept which is 
+achieved by making the members or methods of a class private, and the class is exposed to the end-user or the world
+without providing any details behind implementation using the abstraction concept, so it is also knoawn as a 
+combination of data hiding and abstraction.
+>Encapsulation can be achieved by declaring all the variables in the class as private and writing public methods 
+in the class to set and get the values of variables.
+>it is more defined with the setter and getter method.
+Advantages of Encapsulation:
+.Data hiding
+.increased flexibility
+.reusability
+.testing code is easy
+Ex for implementation:
+->Account - getter and setter methods that performs on account class
+->another example is person 
+
+
+5.Inheritance
+>It is a mechanism in java by which one class is allowed to inherit the features of another class.
+>The keyword used for inheritence is extends
+Types:
+1)Single Inheritance : In this, subclass(child class/derived class) is inherits the features of one super class(Parent class/base class)
+2)Multi level Inheritance : In this, a derived class inheriting a base class and as well as derived class also acts as 
+the base class to other class.
+3)Multiple Inheritance : one subclass inherits the features of two or more superclasses
+4)Hierarchial Inheritance : Two or more subclasses inherits the features of one superclass
+5)Hybrid Inheritance : It is combination of both multiple and hierarchial inheritance.
+Ex for implementation:
+family
+
+
+6.Polymorphism
+>The word polymorphism means having many forms.
+>It defines as the ability of a message to be displayed in more than one form.
+>It allows us to perform a single action in different ways.
+>Real time example
+A person at the same time can have diff characteristics. Like a man at the same time is a father, a husband ,an employee.
+so the same person posesses diff behaviour in diff situations. This is called polymorphism.
+>In java two types of polymorphism,
+1)compile time poly
+2)Run time poly
+Compile time Polymorphism :
+It is also known as static polymorphism. It is achieved by function overloading or operator overloading.
+java doesn't support operator overloading
+Method Overloading - When there are multiple functions with same name but diff in parameters then these functions are known as mo.
+Run time Polymorphism :
+It also known as dynamic polymorphism. It is achieved by function overriding or method overriding.
+Method overriding - when there are multiple functions with same name but diff in classes
+Example :
+arithmetic operators
